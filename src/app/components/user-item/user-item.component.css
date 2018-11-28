@@ -1,0 +1,21 @@
+.user-list-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.user-list-item:before {
+  content: '\2219';
+  position: absolute;
+  left: -20px;
+  top: -12px;
+  font-size: 32px;
+}
+
+.user-table__item {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-table__item>div {
+  width: 150px;
+}

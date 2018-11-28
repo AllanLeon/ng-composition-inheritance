@@ -1,0 +1,27 @@
+<h1>Multiple Templates</h1>
+<app-user-template-layout 
+  [users]="users"
+  [heading]="'User list'"
+>
+  <ng-template let-user>
+    <app-user-item
+      type="list"
+      [user]="user"
+      (view)="viewUser($event)"
+    >
+    </app-user-item>
+  </ng-template>
+</app-user-template-layout>
+<app-user-template-layout
+  [users]="users"
+>
+  <app-user-table-header header></app-user-table-header>
+  <ng-template let-user>
+      <app-user-item
+        type="table"
+        [user]="user"
+        (view)="viewUser($event)"
+      >
+      </app-user-item>
+    </ng-template>
+</app-user-template-layout>

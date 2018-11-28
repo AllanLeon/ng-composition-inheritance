@@ -1,0 +1,18 @@
+<ng-container [ngSwitch]="type">
+  <ng-container *ngSwitchCase="'list'">
+    <div class="user-list-item">
+      {{user.firstName}} {{user.lastName}} <br>
+      {{user.email}} <br>
+      <button (click)="viewUser()">View</button>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="'table'">
+    <div class="user-table__item">
+      <div>{{user.firstName}}</div>
+      <div>{{user.lastName}}</div>
+      <div>{{user.email}}</div>
+      <div><button (click)="viewUser()">View</button></div>
+    </div>
+  </ng-container>
+  <div *ngSwitchDefault></div>
+</ng-container>

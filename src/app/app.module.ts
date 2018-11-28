@@ -13,6 +13,8 @@ import { UserListItemComponent } from './components/user-list-item/user-list-ite
 import { UserBaseItemComponent } from './components/user-base-item/user-base-item.component';
 import { UserTableItemComponent } from './components/user-table-item/user-table-item.component';
 import { UserTableHeaderComponent } from './components/user-table-header/user-table-header.component';
+import { UserItemComponent } from './components/user-item/user-item.component';
+import { MultipleTemplatesComponent } from './layouts/multiple-templates/multiple-templates.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { UserTableHeaderComponent } from './components/user-table-header/user-ta
     UserBaseItemComponent,
     UserTableItemComponent,
     UserTableHeaderComponent,
+    UserItemComponent,
+    MultipleTemplatesComponent,
   ],
   imports: [
     BrowserModule,

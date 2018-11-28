@@ -8,7 +8,7 @@ import { UserBaseItemComponent } from '../user-base-item/user-base-item.componen
       <div>{{user.firstName}}</div>
       <div>{{user.lastName}}</div>
       <div>{{user.email}}</div>
-      <div><button (click)="viewUser(user)">View</button></div>
+      <div><button (click)="viewUser()">View</button></div>
     </div>
   `,
   styles: [`
