@@ -1,0 +1,25 @@
+<h1>Template Layout</h1>
+<app-user-template-layout 
+  [users]="users"
+  [heading]="'User list'"
+>
+  <ng-template let-user>
+    <app-user-list-item
+      [user]="user"
+      (view)="viewUser($event)"
+    >
+    </app-user-list-item>
+  </ng-template>
+</app-user-template-layout>
+<app-user-template-layout
+  [users]="users"
+>
+  <app-user-table-header header></app-user-table-header>
+  <ng-template let-user>
+      <app-user-table-item
+        [user]="user"
+        (view)="viewUser($event)"
+      >
+      </app-user-table-item>
+    </ng-template>
+</app-user-template-layout>

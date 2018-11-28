@@ -1,8 +1,10 @@
 <h1>Layout Inheritance</h1>
 <app-user-list 
   [users]="users"
-  (select)="viewUser($event)"></app-user-list>
+  (view)="viewUser($event)"
+></app-user-list>
   
 <app-user-table
   [users]="users"
-  (select)="viewUser($event)"></app-user-table>
+  (view)="viewUser($event)"
+></app-user-table>

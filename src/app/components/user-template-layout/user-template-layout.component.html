@@ -1,0 +1,15 @@
+<b>{{heading}}</b>
+<div class="user-table">
+  <div class="user-table__header">
+    <ng-content select="[header]"></ng-content>
+  </div>
+  <div class="user-table__body">
+    <ng-template
+      ngFor
+      let-user
+      [ngForOf]="users"
+      [ngForTemplate]="userTemplate"
+    >
+    </ng-template>
+  </div>
+</div>

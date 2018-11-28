@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { User } from 'src/app/models';
 
 @Component({
@@ -6,15 +6,19 @@ import { User } from 'src/app/models';
   template: '',
   styleUrls: ['./user-base-layout.component.css']
 })
-export class UserBaseLayoutComponent {
+export class UserBaseLayoutComponent implements OnInit {
 
   @Input() users: User[] = [];
-  @Output() select = new EventEmitter<User>();
+  @Output() view = new EventEmitter<User>();
 
   heading = 'Users';
 
+  constructor() { }
+
+  ngOnInit() { }
+
   viewUser(user: User) {
-    this.select.emit(user);
+    this.view.emit(user);
   }
 
 }

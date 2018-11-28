@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models';
 
 @Component({
-  selector: 'app-layout-inheritance',
-  templateUrl: './layout-inheritance.component.html',
-  styleUrls: ['./layout-inheritance.component.css']
+  selector: 'app-template-layout',
+  templateUrl: './template-layout.component.html',
+  styleUrls: ['./template-layout.component.css']
 })
-export class LayoutInheritanceComponent implements OnInit {
+export class TemplateLayoutComponent implements OnInit {
 
   users: User[] = [
     {
